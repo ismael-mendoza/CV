@@ -22,16 +22,11 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=1in,top=0.8in,right=1in,bottom=1in]{geometry} % Document margins
-\usepackage{academicons}
-\definecolor{orcidlogocol}{HTML}{A6CE39}
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\usepackage[left=1in,top=0.7in,right=1in,bottom=1in]{geometry} % Document margins
 
 
-\name{Ismael Mendoza} % Your name
-\address{(+1)~650~285~7620  \\ imendoza@umich.edu \\ \url{https://github.com/ismael2395} \\ \href{https://orcid.org/0000-0002-6313-4597}{\textcolor{orcidlogocol}{\aiOrcid}}} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\name{Ismael Mendoza}
+\address{(+1)~734~834~2794  \\ imendoza@umich.edu \\ \url{https://ismael-mendoza.github.io/} }
 \begin{document}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -39,7 +34,7 @@
 \begin{rSection}{Education}
 
 {\bf University of Michigan} \hfill {\em Ann Arbor, MI} 
-\\ PhD Physics and Scientific Computing, \textbf{GPA: 4.00} \hfill {\em Expected June 2024}
+\\ PhD Physics and Scientific Computing, \textbf{GPA: 3.96} \hfill {\em Expected June 2024}
 \vspace*{-0.1cm}
 %
 
@@ -64,21 +59,20 @@ BS Physics with Honors | Minor in Statistics, \textbf{GPA: 3.86} \hfill {\em Sep
 
 \begin{rSection}{Research Experience}
 
-\begin{rSubsection}{Computational Cosmology}{University of Michigan, MI}{Advisor: Camille Avestruz (Cosmology)}{September 2019 -- Present}
-\item Using N-body simulations and statistics to understand the dynamical evolution of dark matter halos. 
-\end{rSubsection}
-
 \begin{rSubsection}{Probabilistic Modeling with Machine Learning in Cosmology}{University of Michigan, MI}{Advisor: Jeffrey Regier (Statistics)}{October 2019 -- Present}
 \item Building a fully probabilistic light source separation algorithm for state-of-the-art astronomical surveys.
 \end{rSubsection}
 
-\begin{rSubsection}{Observational Cosmology and Data Analysis}{Stanford, CA}{Advisor: Patricia Burchat (Cosmology)}{June 2015 -- Present}
-\item Developed a statistical framework for weak gravitational lensing that provides a comprehensive analysis of shape measurement noise bias for blended galaxies.
-\item Performed large scale galaxy simulations using Stanford's High Performance Computing cluster.
+\begin{rSubsection}{Computational Cluster Cosmology}{University of Michigan, MI}{Advisor: Camille Avestruz (Physics)}{September 2019 -- Present}
+\item Using N-body simulations and statistics to understand the dynamical evolution of dark matter halos. 
+\end{rSubsection}
+
+\begin{rSubsection}{Observational Cosmology and Data Analysis}{Stanford, CA}{Advisor: Patricia Burchat (Physics)}{June 2015 -- Present}
+\item Developed a novel statistical framework for weak gravitational lensing using large scale galaxy simulations at the Stanford's High Performance Computing cluster.
 \end{rSubsection}
 
 %------------------------------------------------
-\begin{rSubsection}{ Convex Optimization}{Lausanne, Switzerland}{Advisor: Nisheeth Vishnoi (Theoretical Computer Science)}{June 2018 -- September 2018}
+\begin{rSubsection}{Convex Optimization}{Lausanne, Switzerland}{Advisor: Nisheeth Vishnoi (Theoretical Computer Science)}{June 2018 -- September 2018}
 \item Participated in Summer@EPFL CS program at the \'Ecole polytechnique f\'ed\'erale de Lausanne (EPFL).
 \item Designed and executed a project at interface of optimization, cosmology, and Riemannian geometry.
 \end{rSubsection}
@@ -88,8 +82,12 @@ BS Physics with Honors | Minor in Statistics, \textbf{GPA: 3.86} \hfill {\em Sep
 %   TEACHING EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{TEACHING EXPERIENCE} 
+
+\begin{rSubsection}{GSI at University of Michigan, Statistics Department}{Ann Arbor, MI}{}{}
+    \item Statistics 507: Data Science and Analytics using Python \hfill \textit{September 2020 -- December 2020}
+\end{rSubsection} 
 %
-\begin{rSubsection}{Graduate Student Instructor at University of Michigan, Physics Department}{Ann Arbor, MI}{}{}
+\begin{rSubsection}{GSI at University of Michigan, Physics Department}{Ann Arbor, MI}{}{}
     \item Physics 136: Physics for the Life Sciences Laboratory I \hfill \textit{September 2019 -- December 2019}
     \item Physics 141: Elementary Laboratory I \hfill \textit{January 2020 -- April 2020}
 \end{rSubsection} 
@@ -104,11 +102,16 @@ BS Physics with Honors | Minor in Statistics, \textbf{GPA: 3.86} \hfill {\em Sep
 %   HONORS AND AWARDS SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Honors and Awards} \itemsep -3pt \vspace*{-.25cm}
-\item \textbf{Stanford Undergraduate Advising and Research Major Grant}: Grant recipient for research \hfill {\em 2017}
 
-\item \textbf{Large Synoptic Survey Telescope Corporation Enabling Science}: Grant recipient for research \hfill {\em 2016}
+\item \textbf{Computational and Data Science Fellowship} -- \\ ACM’s Special Interest Group on High Performance Computing (SIGHPC) \hfill {\em 2021}
 
-\item \textbf{45th International Physics Olympiad}:  Bronze Medalist \hfill {\em 2014}
+\item \textbf{Graduate Fellowship} -- Michigan Institute for Computational Discovery \& Engineering  \hfill {\em 2021}
+
+\item \textbf{Enabling Science Award} -- Large Synoptic Survey Telescope Corporation \hfill {\em 2016 \& 2021}
+
+\item \textbf{Research Grant} -- Stanford Undergraduate Advising and Research \hfill {\em 2017}
+
+\item \textbf{Bronze Medalist}: 45th International Physics Olympiad \hfill {\em 2014}
 \end{rSection}
 %----------------------------------------------------------------------------------------
 % PROGRAMMING SKILLS SECTION
@@ -125,8 +128,7 @@ Python, C/C++, \LaTeX, Mathematica, Unix shell, Git, R
 \begin{rSection}{PUBLICATIONS}
 %
 \vspace*{-1em}
-\item Javier Sanchez, Ismael Mendoza, David P. Kirkby, and Patricia Burchat, \textit{Olber’s Paradox Revisited – Effects of Overlapping Sources on Cosmic Shear Estimation:  Statistical Sensitivity and Pixel-Noise Bias}, in collaboration review.
-%
+\item Sanchez, J., \textbf{Mendoza, I.}, Kirkby, D. P., \& Burchat, P. R. (2021). \textit{Effects of overlapping sources on cosmic shear estimation: Statistical sensitivity and pixel-noise bias.} arXiv preprint arXiv:2103.02078. Accepted to the Journal of Cosmology and Astrophysics (JCAP).
 \end{rSection}
 
 
