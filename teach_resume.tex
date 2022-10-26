@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=1in,top=0.9in,right=1in,bottom=1in]{geometry} % Document margins
+\usepackage{hyperref}
+\usepackage{fontawesome5} % icons
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\pytorch}[0]{\texttt{pytorch}}
+\newcommand{\pl}[0]{\texttt{pytorch-lightning}}
+
+\name{Ismael Mendoza}
+\address{\faIcon{phone-square-alt} (+1)~734~834~2794 \, \faIcon{envelope} imendoza@umich.edu}
+% \faIcon{map-marker-alt} 2222 Fuller Ct. Apt. 1112A, Ann Arbor, MI 48105} % address (optional)
+\address{\faIcon{globe} \url{https://ismael-mendoza.github.io} \, \faIcon{github} \url{https://github.com/ismael-mendoza}}
+%
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+
+{\bf University of Michigan} \hfill {\em Ann Arbor, MI} 
+\\ PhD Physics and Scientific Computing Candidate, GPA: 3.96 \hfill {\em Expected June 2024}
+
+
+{\bf Stanford University} \hfill {\em Stanford, CA} 
+\\ MS Computer Science, GPA: 3.74 \hfill {\em September 2018 - June 2019}
+
+\begin{itemize}[itemsep=-0.3em] %compress item separation for aesthetics. 
+\vspace*{-0.1cm}
+    \item 
+    \textit{Relevant Coursework}: From Languages to Information, Artificial Intelligence: Principles and Techniques
+\end{itemize}
+
+BS Physics with Honors \& Minor in Statistics, GPA: 3.86  \hfill {\em September 2014 - June 2018}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+\vspace*{-0.3cm}
+\item {\small $\bullet$} \textit{Python:} 7+ years of experience in using Python for coursework and several research projects, including comprehensive knowledge of its scientific computing stack: \texttt{numpy}, \texttt{scipy}, \texttt{scikit-learn}, \texttt{pandas}, \texttt{matplotlib}.
+
+\item {\small $\bullet$} \textit{Python for Text Data:} Experience teaching an introductory Python course for Data Science with several homeworks focused on text analysis. Extensive use of Python for text data processing as part of my master's coursework. Developed a class project in Python to analyze Twitter data to disambiguate between similar languages and dialects.
+
+\item {\small $\bullet$} \textit{Other Programming Languages:} C/C++, \LaTeX, Mathematica, Unix shell, Git, R, SQL.
+
+\item {\small $\bullet$} \textit{Languages}: Native Spanish fluency.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   TEACHING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{TEACHING EXPERIENCE} 
+\begin{rSubsection}{Data Science and Analytics using Python}{Ann Arbor, MI}{Statistics Graduate Student Instructor, University of Michigan}{August 2020 -- December 2020}
+%
+\item Led discussions sections to help students understand how to use Python for data analysis, scientific computing, and text processing.
+\item Designed and graded weekly programming assignments.
+\item Planned and executed a Kaggle machine learning competition as a final project.
+%
+\end{rSubsection} 
+%
+\begin{rSubsection}{Physics for the Life Sciences I; Elementary Laboratory I}{Ann Arbor, MI}{Physics Graduate Student Instructor, University of Michigan}{September 2019 -- April 2020}
+%
+\item Introduced coding concepts in Python Jupyter notebooks to enable students to simulate physical phenomena.
+
+\item Guided students through a series of physics experiments including analysis of their measurements.
+
+\item Facilitated group discussions and provided regular feedback on student's performance. 
+\end{rSubsection} 
+%
+\begin{rSubsection}{Mechanics, Fluids, and Heat; Foundations of Modern Physics}{Stanford, CA}{Teaching Assistant, Stanford University}{Fall 2017; Fall 2018}
+
+\item Designed and graded weekly problem sets, quizzes, and exams. 
+\item Lead weekly problem-solving sessions aimed at reinforcing student's understanding of lecture. 
+%
+\end{rSubsection} 
+%
+\textbf{EPASA}: Tutored middle school student in Math and English. \hfill {\em September 2016 -- June 2018}
+
+\vspace*{-.15cm}
+\textbf{Habla}: Tutored Stanford custodial staff in English 3 hours/week. \hfill {\em September 2014 -- June 2018}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{TECHNICAL EXPERIENCE}
+
+\begin{rSubsection}{Open-Source Software Development}{Ann Arbor, MI}{Full Member, Dark Energy Survey Collaboration}{June 2020 -- Present}
+\item Maintainer and lead developer of the \textit{\href{https://github.com/LSSTDESC/BlendingToolKit}{BlendingToolKit}}, a software tool kit written in Python for evaluating performance metrics for detection, deblending and measurement algorithms, applied to images of blended galaxies.
+
+\item Developed and presented tutorials at collaboration meetings, which successfully recruited a team of contributors.
+
+\item Led team of contributors to extend user interface, incorporate realistic simulations, and create tutorials and documentation.
+\end{rSubsection}
+
+
+\begin{rSubsection}{Probabilistic Modeling and Machine Learning in Astronomical Surveys}{Ann Arbor, MI}{Graduate Student Research Assistant, University of Michigan}{October 2019 -- Present}
+\item Lead maintainer and developer of \textit{\href{https://github.com/prob-ml/bliss}{BLISS}}, an open-source Python package designed to measure visually overlapping (blended) galaxies in state-of-the-art astronomical surveys.
+\item Built probabilistic model of galaxy images using latest advancements in variational inference and deep generative modeling.
+\item Created pipeline to train, validate, and test generative models with \pl.
+\item\textbf{} Achieved $\times 1,000$ speedup on deblending galaxies and stars compared to state-of-the-art deblenders.
+\end{rSubsection}
+
+\begin{rSubsection}{Statistical Models for Cosmological Simulations}{Ann Arbor, MI}{Graduate Student Research Assistant, University of Michigan}{September 2019 -- Present}
+\item Built linear models based on cosmological datasets to predict present day properties of dark matter haloes based on their mass growth history. 
+\item Performed multivariate analysis with PCA to determine which time scales (features) were most impactful for predictions. Derived physically meaningful conclusions from this analysis.
+\end{rSubsection}
+
+\begin{rSubsection}{Observational Cosmology and Data Analysis}{Stanford, CA}{Student Research Assistant, Stanford University}{June 2015 -- April 2021}
+
+\item Developed a statistical framework and algorithm to quantify biases in galaxy shape measurements.
+\item Performed large-scale cosmological simulations and measurements at Stanford's Computing Cluster.
+\item Publication accepted to the Journal of Cosmology and Astrophysics (JCAP). 
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{Convex Optimization}{Lausanne, Switzerland}{Summer Intern, \'Ecole polytechnique f\'ed\'erale de Lausanne (EPFL)}{June 2018 -- September 2018}
+\item Participated in the Summer@EPFL CS program. 
+\item Designed and executed a project at interface of optimization and differential geometry. 
+\item Used non-convex optimization techniques to mathematically show the high efficiency of my algorithm.
+\end{rSubsection}
+
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%   HONORS AND AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Honors and Awards} \itemsep -3pt \vspace*{-.25cm}
+
+\item \textbf{Computational and Data Science Fellowship} -- \\ ACM’s Special Interest Group on High Performance Computing (SIGHPC) \hfill {\em 2021}
+
+\item \textbf{Graduate Fellowship} -- Michigan Institute for Computational Discovery \& Engineering  \hfill {\em 2021}
+
+\item \textbf{Enabling Science Award} -- Large Synoptic Survey Telescope Corporation \hfill {\em 2016 \& 2021}
+
+\item \textbf{Research Grant} -- Stanford Undergraduate Advising and Research \hfill {\em 2017}
+
+\item \textbf{Bronze Medalist} -- 45th International Physics Olympiad \hfill {\em 2014}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PUBLICATIONS}
+%
+\vspace*{-1em}
+\item Sanchez, J., \textbf{Mendoza, I.}, Kirkby, D. P., Burchat, P. R., and LSST Dark Energy Science Collaboration, “Effects of overlapping sources on cosmic shear estimation: Statistical sensitivity and pixel-noise bias”, \textit{Journal of Cosmology and Astroparticle Physics}, vol. 2021, no. 7, 2021. doi:10.1088/1475-7516/2021/07/043.
+%
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% PRESENTATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PRESENTATIONS}
+%
+\vspace*{-1em}
+\item Presented scholarly work in several local and international conferences.
+%
+\end{rSection}
+
+
+\end{document}
