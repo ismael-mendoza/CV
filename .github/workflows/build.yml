@@ -19,8 +19,16 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: cv.tex
-      - name: Upload a build artifact
-        uses: actions/upload-artifact@v2.3.1
-        with:
-          name: PDF
-          path: cv.pdf
+          
+      - name: Check pdf file
+        run: |
+          file cv.pdf | grep -q ' PDF '
+
+      - name: Upload file to repository
+        run: |
+          git config --global user.name "ismael-mendoza"
+          git config --global user.email "imendoza@umich.edu"
+          git add cv.pdf
+          git commit -m "upload latest CV PDF"
+          git push
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
